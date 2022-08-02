@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		8B73C8892899579C0049CD83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8882899579C0049CD83 /* AppDelegate.swift */; };
 		8B73C88B2899579C0049CD83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C88A2899579C0049CD83 /* SceneDelegate.swift */; };
-		8B73C88D2899579C0049CD83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C88C2899579C0049CD83 /* ViewController.swift */; };
-		8B73C8902899579C0049CD83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B73C88E2899579C0049CD83 /* Main.storyboard */; };
+		8B73C88D2899579C0049CD83 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C88C2899579C0049CD83 /* MainTabBarViewController.swift */; };
 		8B73C8922899579E0049CD83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B73C8912899579E0049CD83 /* Assets.xcassets */; };
 		8B73C8952899579E0049CD83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B73C8932899579E0049CD83 /* LaunchScreen.storyboard */; };
 		8B73C8A02899579E0049CD83 /* MatFlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C89F2899579E0049CD83 /* MatFlixTests.swift */; };
 		8B73C8AA2899579E0049CD83 /* MatFlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8A92899579E0049CD83 /* MatFlixUITests.swift */; };
 		8B73C8AC2899579E0049CD83 /* MatFlixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8AB2899579E0049CD83 /* MatFlixUITestsLaunchTests.swift */; };
+		8B73C8BA28995BD70049CD83 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8B928995BD70049CD83 /* HomeViewController.swift */; };
+		8B73C8BC28995C700049CD83 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8BB28995C700049CD83 /* UpcomingViewController.swift */; };
+		8B73C8BE28995CC10049CD83 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8BD28995CC00049CD83 /* SearchViewController.swift */; };
+		8B73C8C028995D970049CD83 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8BF28995D970049CD83 /* DownloadsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,7 @@
 		8B73C8852899579C0049CD83 /* MatFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B73C8882899579C0049CD83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B73C88A2899579C0049CD83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8B73C88C2899579C0049CD83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B73C88F2899579C0049CD83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B73C88C2899579C0049CD83 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		8B73C8912899579E0049CD83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B73C8942899579E0049CD83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B73C8962899579E0049CD83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		8B73C8A52899579E0049CD83 /* MatFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B73C8A92899579E0049CD83 /* MatFlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatFlixUITests.swift; sourceTree = "<group>"; };
 		8B73C8AB2899579E0049CD83 /* MatFlixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatFlixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8B73C8B928995BD70049CD83 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8B73C8BB28995C700049CD83 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		8B73C8BD28995CC00049CD83 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8B73C8BF28995D970049CD83 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,7 @@
 			children = (
 				8B73C8882899579C0049CD83 /* AppDelegate.swift */,
 				8B73C88A2899579C0049CD83 /* SceneDelegate.swift */,
-				8B73C88C2899579C0049CD83 /* ViewController.swift */,
-				8B73C88E2899579C0049CD83 /* Main.storyboard */,
+				8B73C8B828995B920049CD83 /* Controllers */,
 				8B73C8912899579E0049CD83 /* Assets.xcassets */,
 				8B73C8932899579E0049CD83 /* LaunchScreen.storyboard */,
 				8B73C8962899579E0049CD83 /* Info.plist */,
@@ -125,6 +130,18 @@
 				8B73C8AB2899579E0049CD83 /* MatFlixUITestsLaunchTests.swift */,
 			);
 			path = MatFlixUITests;
+			sourceTree = "<group>";
+		};
+		8B73C8B828995B920049CD83 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B73C88C2899579C0049CD83 /* MainTabBarViewController.swift */,
+				8B73C8B928995BD70049CD83 /* HomeViewController.swift */,
+				8B73C8BB28995C700049CD83 /* UpcomingViewController.swift */,
+				8B73C8BD28995CC00049CD83 /* SearchViewController.swift */,
+				8B73C8BF28995D970049CD83 /* DownloadsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +250,6 @@
 			files = (
 				8B73C8952899579E0049CD83 /* LaunchScreen.storyboard in Resources */,
 				8B73C8922899579E0049CD83 /* Assets.xcassets in Resources */,
-				8B73C8902899579C0049CD83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B73C88D2899579C0049CD83 /* ViewController.swift in Sources */,
+				8B73C8BE28995CC10049CD83 /* SearchViewController.swift in Sources */,
+				8B73C88D2899579C0049CD83 /* MainTabBarViewController.swift in Sources */,
+				8B73C8C028995D970049CD83 /* DownloadsViewController.swift in Sources */,
 				8B73C8892899579C0049CD83 /* AppDelegate.swift in Sources */,
 				8B73C88B2899579C0049CD83 /* SceneDelegate.swift in Sources */,
+				8B73C8BC28995C700049CD83 /* UpcomingViewController.swift in Sources */,
+				8B73C8BA28995BD70049CD83 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +317,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8B73C88E2899579C0049CD83 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B73C88F2899579C0049CD83 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8B73C8932899579E0049CD83 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +454,6 @@
 				INFOPLIST_FILE = MatFlix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +481,6 @@
 				INFOPLIST_FILE = MatFlix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
