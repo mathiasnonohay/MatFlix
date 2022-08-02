@@ -19,6 +19,8 @@
 		8B73C8BC28995C700049CD83 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8BB28995C700049CD83 /* UpcomingViewController.swift */; };
 		8B73C8BE28995CC10049CD83 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8BD28995CC00049CD83 /* SearchViewController.swift */; };
 		8B73C8C028995D970049CD83 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8BF28995D970049CD83 /* DownloadsViewController.swift */; };
+		8B906D7A28998642009D702D /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B906D7928998642009D702D /* CollectionViewTableViewCell.swift */; };
+		8B906D7D2899A681009D702D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B906D7C2899A681009D702D /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		8B73C8BB28995C700049CD83 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		8B73C8BD28995CC00049CD83 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		8B73C8BF28995D970049CD83 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		8B906D7928998642009D702D /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		8B906D7C2899A681009D702D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		8B73C8872899579C0049CD83 /* MatFlix */ = {
 			isa = PBXGroup;
 			children = (
+				8B906D78289985FA009D702D /* Managers */,
+				8B906D77289985EB009D702D /* Resources */,
 				8B73C8B828995B920049CD83 /* Controllers */,
 				8B906D7628997E81009D702D /* Models */,
 				8B906D7428997E70009D702D /* Views */,
@@ -138,7 +144,7 @@
 		8B73C8B828995B920049CD83 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8B73C88C2899579C0049CD83 /* MainTabBarViewController.swift */,
+				8B906D7B289986C5009D702D /* MainController */,
 				8B73C8B928995BD70049CD83 /* HomeViewController.swift */,
 				8B73C8BB28995C700049CD83 /* UpcomingViewController.swift */,
 				8B73C8BD28995CC00049CD83 /* SearchViewController.swift */,
@@ -150,6 +156,8 @@
 		8B906D7428997E70009D702D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8B906D7928998642009D702D /* CollectionViewTableViewCell.swift */,
+				8B906D7C2899A681009D702D /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +174,28 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8B906D77289985EB009D702D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B906D78289985FA009D702D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8B906D7B289986C5009D702D /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				8B73C88C2899579C0049CD83 /* MainTabBarViewController.swift */,
+			);
+			path = MainController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +329,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B73C8BE28995CC10049CD83 /* SearchViewController.swift in Sources */,
+				8B906D7D2899A681009D702D /* HeaderView.swift in Sources */,
 				8B73C88D2899579C0049CD83 /* MainTabBarViewController.swift in Sources */,
+				8B906D7A28998642009D702D /* CollectionViewTableViewCell.swift in Sources */,
 				8B73C8C028995D970049CD83 /* DownloadsViewController.swift in Sources */,
 				8B73C8892899579C0049CD83 /* AppDelegate.swift in Sources */,
 				8B73C88B2899579C0049CD83 /* SceneDelegate.swift in Sources */,
