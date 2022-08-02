@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B73C8892899579C0049CD83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8882899579C0049CD83 /* AppDelegate.swift */; };
+		8B73C88B2899579C0049CD83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C88A2899579C0049CD83 /* SceneDelegate.swift */; };
+		8B73C88D2899579C0049CD83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C88C2899579C0049CD83 /* ViewController.swift */; };
+		8B73C8902899579C0049CD83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B73C88E2899579C0049CD83 /* Main.storyboard */; };
+		8B73C8922899579E0049CD83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B73C8912899579E0049CD83 /* Assets.xcassets */; };
+		8B73C8952899579E0049CD83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B73C8932899579E0049CD83 /* LaunchScreen.storyboard */; };
+		8B73C8A02899579E0049CD83 /* MatFlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C89F2899579E0049CD83 /* MatFlixTests.swift */; };
+		8B73C8AA2899579E0049CD83 /* MatFlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8A92899579E0049CD83 /* MatFlixUITests.swift */; };
+		8B73C8AC2899579E0049CD83 /* MatFlixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8AB2899579E0049CD83 /* MatFlixUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B73C89C2899579E0049CD83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B73C87D2899579C0049CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B73C8842899579C0049CD83;
+			remoteInfo = MatFlix;
+		};
+		8B73C8A62899579E0049CD83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B73C87D2899579C0049CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B73C8842899579C0049CD83;
+			remoteInfo = MatFlix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B73C8852899579C0049CD83 /* MatFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B73C8882899579C0049CD83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B73C88A2899579C0049CD83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8B73C88C2899579C0049CD83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B73C88F2899579C0049CD83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B73C8912899579E0049CD83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B73C8942899579E0049CD83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B73C8962899579E0049CD83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B73C89B2899579E0049CD83 /* MatFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B73C89F2899579E0049CD83 /* MatFlixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatFlixTests.swift; sourceTree = "<group>"; };
+		8B73C8A52899579E0049CD83 /* MatFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B73C8A92899579E0049CD83 /* MatFlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatFlixUITests.swift; sourceTree = "<group>"; };
+		8B73C8AB2899579E0049CD83 /* MatFlixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatFlixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B73C8822899579C0049CD83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B73C8982899579E0049CD83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B73C8A22899579E0049CD83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B73C87C2899579C0049CD83 = {
+			isa = PBXGroup;
+			children = (
+				8B73C8872899579C0049CD83 /* MatFlix */,
+				8B73C89E2899579E0049CD83 /* MatFlixTests */,
+				8B73C8A82899579E0049CD83 /* MatFlixUITests */,
+				8B73C8862899579C0049CD83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B73C8862899579C0049CD83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B73C8852899579C0049CD83 /* MatFlix.app */,
+				8B73C89B2899579E0049CD83 /* MatFlixTests.xctest */,
+				8B73C8A52899579E0049CD83 /* MatFlixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B73C8872899579C0049CD83 /* MatFlix */ = {
+			isa = PBXGroup;
+			children = (
+				8B73C8882899579C0049CD83 /* AppDelegate.swift */,
+				8B73C88A2899579C0049CD83 /* SceneDelegate.swift */,
+				8B73C88C2899579C0049CD83 /* ViewController.swift */,
+				8B73C88E2899579C0049CD83 /* Main.storyboard */,
+				8B73C8912899579E0049CD83 /* Assets.xcassets */,
+				8B73C8932899579E0049CD83 /* LaunchScreen.storyboard */,
+				8B73C8962899579E0049CD83 /* Info.plist */,
+			);
+			path = MatFlix;
+			sourceTree = "<group>";
+		};
+		8B73C89E2899579E0049CD83 /* MatFlixTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B73C89F2899579E0049CD83 /* MatFlixTests.swift */,
+			);
+			path = MatFlixTests;
+			sourceTree = "<group>";
+		};
+		8B73C8A82899579E0049CD83 /* MatFlixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B73C8A92899579E0049CD83 /* MatFlixUITests.swift */,
+				8B73C8AB2899579E0049CD83 /* MatFlixUITestsLaunchTests.swift */,
+			);
+			path = MatFlixUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B73C8842899579C0049CD83 /* MatFlix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B73C8AF2899579E0049CD83 /* Build configuration list for PBXNativeTarget "MatFlix" */;
+			buildPhases = (
+				8B73C8812899579C0049CD83 /* Sources */,
+				8B73C8822899579C0049CD83 /* Frameworks */,
+				8B73C8832899579C0049CD83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MatFlix;
+			productName = MatFlix;
+			productReference = 8B73C8852899579C0049CD83 /* MatFlix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B73C89A2899579E0049CD83 /* MatFlixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B73C8B22899579E0049CD83 /* Build configuration list for PBXNativeTarget "MatFlixTests" */;
+			buildPhases = (
+				8B73C8972899579E0049CD83 /* Sources */,
+				8B73C8982899579E0049CD83 /* Frameworks */,
+				8B73C8992899579E0049CD83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B73C89D2899579E0049CD83 /* PBXTargetDependency */,
+			);
+			name = MatFlixTests;
+			productName = MatFlixTests;
+			productReference = 8B73C89B2899579E0049CD83 /* MatFlixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B73C8A42899579E0049CD83 /* MatFlixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B73C8B52899579E0049CD83 /* Build configuration list for PBXNativeTarget "MatFlixUITests" */;
+			buildPhases = (
+				8B73C8A12899579E0049CD83 /* Sources */,
+				8B73C8A22899579E0049CD83 /* Frameworks */,
+				8B73C8A32899579E0049CD83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B73C8A72899579E0049CD83 /* PBXTargetDependency */,
+			);
+			name = MatFlixUITests;
+			productName = MatFlixUITests;
+			productReference = 8B73C8A52899579E0049CD83 /* MatFlixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B73C87D2899579C0049CD83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					8B73C8842899579C0049CD83 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					8B73C89A2899579E0049CD83 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 8B73C8842899579C0049CD83;
+					};
+					8B73C8A42899579E0049CD83 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 8B73C8842899579C0049CD83;
+					};
+				};
+			};
+			buildConfigurationList = 8B73C8802899579C0049CD83 /* Build configuration list for PBXProject "MatFlix" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B73C87C2899579C0049CD83;
+			productRefGroup = 8B73C8862899579C0049CD83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B73C8842899579C0049CD83 /* MatFlix */,
+				8B73C89A2899579E0049CD83 /* MatFlixTests */,
+				8B73C8A42899579E0049CD83 /* MatFlixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B73C8832899579C0049CD83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B73C8952899579E0049CD83 /* LaunchScreen.storyboard in Resources */,
+				8B73C8922899579E0049CD83 /* Assets.xcassets in Resources */,
+				8B73C8902899579C0049CD83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B73C8992899579E0049CD83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B73C8A32899579E0049CD83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B73C8812899579C0049CD83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B73C88D2899579C0049CD83 /* ViewController.swift in Sources */,
+				8B73C8892899579C0049CD83 /* AppDelegate.swift in Sources */,
+				8B73C88B2899579C0049CD83 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B73C8972899579E0049CD83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B73C8A02899579E0049CD83 /* MatFlixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B73C8A12899579E0049CD83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B73C8AC2899579E0049CD83 /* MatFlixUITestsLaunchTests.swift in Sources */,
+				8B73C8AA2899579E0049CD83 /* MatFlixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B73C89D2899579E0049CD83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B73C8842899579C0049CD83 /* MatFlix */;
+			targetProxy = 8B73C89C2899579E0049CD83 /* PBXContainerItemProxy */;
+		};
+		8B73C8A72899579E0049CD83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B73C8842899579C0049CD83 /* MatFlix */;
+			targetProxy = 8B73C8A62899579E0049CD83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B73C88E2899579C0049CD83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B73C88F2899579C0049CD83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B73C8932899579E0049CD83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B73C8942899579E0049CD83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B73C8AD2899579E0049CD83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B73C8AE2899579E0049CD83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B73C8B02899579E0049CD83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F64MFXX9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MatFlix/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MN.MatFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B73C8B12899579E0049CD83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F64MFXX9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MatFlix/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MN.MatFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B73C8B32899579E0049CD83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F64MFXX9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MN.MatFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MatFlix.app/MatFlix";
+			};
+			name = Debug;
+		};
+		8B73C8B42899579E0049CD83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F64MFXX9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MN.MatFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MatFlix.app/MatFlix";
+			};
+			name = Release;
+		};
+		8B73C8B62899579E0049CD83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F64MFXX9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MN.MatFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MatFlix;
+			};
+			name = Debug;
+		};
+		8B73C8B72899579E0049CD83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F64MFXX9M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MN.MatFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MatFlix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B73C8802899579C0049CD83 /* Build configuration list for PBXProject "MatFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B73C8AD2899579E0049CD83 /* Debug */,
+				8B73C8AE2899579E0049CD83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B73C8AF2899579E0049CD83 /* Build configuration list for PBXNativeTarget "MatFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B73C8B02899579E0049CD83 /* Debug */,
+				8B73C8B12899579E0049CD83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B73C8B22899579E0049CD83 /* Build configuration list for PBXNativeTarget "MatFlixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B73C8B32899579E0049CD83 /* Debug */,
+				8B73C8B42899579E0049CD83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B73C8B52899579E0049CD83 /* Build configuration list for PBXNativeTarget "MatFlixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B73C8B62899579E0049CD83 /* Debug */,
+				8B73C8B72899579E0049CD83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B73C87D2899579C0049CD83 /* Project object */;
+}
