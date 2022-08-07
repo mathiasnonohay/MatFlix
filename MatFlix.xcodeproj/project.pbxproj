@@ -21,6 +21,7 @@
 		8B73C8C028995D970049CD83 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8BF28995D970049CD83 /* DownloadsViewController.swift */; };
 		8B906D7A28998642009D702D /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B906D7928998642009D702D /* CollectionViewTableViewCell.swift */; };
 		8B906D7D2899A681009D702D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B906D7C2899A681009D702D /* HeaderView.swift */; };
+		8B906D7F28A00248009D702D /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B906D7E28A00248009D702D /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		8B73C8BF28995D970049CD83 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		8B906D7928998642009D702D /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		8B906D7C2899A681009D702D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8B906D7E28A00248009D702D /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		8B906D78289985FA009D702D /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				8B906D7E28A00248009D702D /* APICaller.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				8B73C8BE28995CC10049CD83 /* SearchViewController.swift in Sources */,
 				8B906D7D2899A681009D702D /* HeaderView.swift in Sources */,
 				8B73C88D2899579C0049CD83 /* MainTabBarViewController.swift in Sources */,
+				8B906D7F28A00248009D702D /* APICaller.swift in Sources */,
 				8B906D7A28998642009D702D /* CollectionViewTableViewCell.swift in Sources */,
 				8B73C8C028995D970049CD83 /* DownloadsViewController.swift in Sources */,
 				8B73C8892899579C0049CD83 /* AppDelegate.swift in Sources */,
