@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ShowCollectionViewCell: UICollectionViewCell {
     
@@ -14,6 +15,8 @@ class ShowCollectionViewCell: UICollectionViewCell {
     private let posterImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 10
+        imageView.layer.masksToBounds = true
         return imageView
     }()
     
@@ -32,4 +35,8 @@ class ShowCollectionViewCell: UICollectionViewCell {
         posterImageView.frame = contentView.bounds
     }
     
+    public func configure(with model: String) {
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500\(model)") else { return }
+        posterImageView.sd_setImage(with: url, completed: nil)
+    }
 }
