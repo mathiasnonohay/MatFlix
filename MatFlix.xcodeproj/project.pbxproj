@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8B3F59A828A27A9900266334 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3F59A728A27A9900266334 /* SDWebImage */; };
 		8B3F59AA28A27A9900266334 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3F59A928A27A9900266334 /* SDWebImageMapKit */; };
+		8B3F59AC28A297F000266334 /* ShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F59AB28A297F000266334 /* ShowTableViewCell.swift */; };
 		8B73C8892899579C0049CD83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C8882899579C0049CD83 /* AppDelegate.swift */; };
 		8B73C88B2899579C0049CD83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C88A2899579C0049CD83 /* SceneDelegate.swift */; };
 		8B73C88D2899579C0049CD83 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B73C88C2899579C0049CD83 /* MainTabBarViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B3F59AB28A297F000266334 /* ShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTableViewCell.swift; sourceTree = "<group>"; };
 		8B73C8852899579C0049CD83 /* MatFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B73C8882899579C0049CD83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B73C88A2899579C0049CD83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				8B906D7928998642009D702D /* CollectionViewTableViewCell.swift */,
 				8B906D7C2899A681009D702D /* HeaderView.swift */,
 				8B906D8428A023F8009D702D /* ShowCollectionViewCell.swift */,
+				8B3F59AB28A297F000266334 /* ShowTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			files = (
 				8B73C8BE28995CC10049CD83 /* SearchViewController.swift in Sources */,
 				8B906D7D2899A681009D702D /* HeaderView.swift in Sources */,
+				8B3F59AC28A297F000266334 /* ShowTableViewCell.swift in Sources */,
 				8B73C88D2899579C0049CD83 /* MainTabBarViewController.swift in Sources */,
 				8B906D7F28A00248009D702D /* APICaller.swift in Sources */,
 				8B906D8528A023F8009D702D /* ShowCollectionViewCell.swift in Sources */,

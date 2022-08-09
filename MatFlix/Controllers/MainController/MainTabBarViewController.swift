@@ -25,7 +25,7 @@ class MainTabBarViewController: UITabBarController {
         vc4.tabBarItem.image = UIImage(systemName: "square.and.arrow.down")
         
         vc1.title = "Home"
-        vc2.title = "Coming Soon"
+        vc2.title = "Upcoming"
         vc3.title = "Top Search"
         vc4.title = "Downloads"
         
