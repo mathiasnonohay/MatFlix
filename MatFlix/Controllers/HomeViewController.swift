@@ -45,7 +45,6 @@ class HomeViewController: UIViewController {
     
     private func configureNavBar() {
         var image = UIImage(named: "netFlixLogo")
-        image?.configuration.
         image = image?.withRenderingMode(.alwaysOriginal)
         let logo = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
         logo.width = 50
