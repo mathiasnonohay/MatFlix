@@ -45,12 +45,16 @@ class HomeViewController: UIViewController {
     
     private func configureNavBar() {
         var image = UIImage(named: "netFlixLogo")
+        image?.configuration.
         image = image?.withRenderingMode(.alwaysOriginal)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
-        
-        navigationItem.rightBarButtonItems = [
-            UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),
-            UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)]
+        let logo = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
+        logo.width = 50
+        let emptySpace = UIBarButtonItem(systemItem: .flexibleSpace)
+        let person =  UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil)
+        let playRect = UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
+
+        navigationItem.leftBarButtonItems = [logo, emptySpace]
+        navigationItem.rightBarButtonItems = [person, playRect]
         
         navigationController?.navigationBar.tintColor = .white
     }

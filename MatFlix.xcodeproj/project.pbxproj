@@ -128,7 +128,6 @@
 				8B73C8B828995B920049CD83 /* Controllers */,
 				8B906D7628997E81009D702D /* Models */,
 				8B906D7428997E70009D702D /* Views */,
-				8B906D7528997E79009D702D /* ViewModels */,
 				8B73C8882899579C0049CD83 /* AppDelegate.swift */,
 				8B73C88A2899579C0049CD83 /* SceneDelegate.swift */,
 				8B73C8912899579E0049CD83 /* Assets.xcassets */,
@@ -176,13 +175,6 @@
 				8B3F59AB28A297F000266334 /* ShowTableViewCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		8B906D7528997E79009D702D /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		8B906D7628997E81009D702D /* Models */ = {
@@ -536,7 +528,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F64MFXX9M4;
+				DEVELOPMENT_TEAM = AK72UZ6234;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MatFlix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -563,7 +555,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F64MFXX9M4;
+				DEVELOPMENT_TEAM = AK72UZ6234;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MatFlix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
