@@ -14,7 +14,7 @@ class UpcomingViewController: UIViewController {
     private let upcomingTable: UITableView = {
         let table = UITableView()
         table.backgroundColor = .black
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        table.register(ShowTableViewCell.self, forCellReuseIdentifier: ShowTableViewCell.identifier)
         
         return table
     }()
@@ -44,9 +44,9 @@ class UpcomingViewController: UIViewController {
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
-    
+     
     private func fetchUpcoming() {
-        APICaller.shared.getUpcomingMovies { [weak self] result in
+        APICaller.shared.getShows(with: .movie, and: .upcoming) { [weak self] result in
             switch result {
             case .success(let shows):
                 self?.shows = shows
@@ -67,12 +67,9 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .black
-        cell.textLabel?.textColor = .white
-        cell.textLabel?.text = shows[indexPath.row].originalTitle
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ShowTableViewCell.identifier, for: indexPath) as? ShowTableViewCell else  { return UITableViewCell() }
         
-        return cell
+        cell.configure(with: ShowViewModel(title: shows[indexPath.row].title ?? String.emptyString, posterURL: shows[indexPath.row].posterPath ?? String.emptyString))
     }
     
     

@@ -83,4 +83,9 @@ class HeaderView: UIView {
         fatalError()
     }
     
+    public func configure(with model: Show) {
+        guard let posterPath = model.posterPath else { return }
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500\(posterPath)") else { return }
+        headerView.sd_setImage(with: url, completed: nil)
+    }
 }

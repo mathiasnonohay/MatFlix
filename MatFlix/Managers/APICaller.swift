@@ -21,6 +21,12 @@ enum ShowType: String {
     case movie
     case tv
     case person
+}s
+
+enum SearchType: String {
+    case topRated = "top_rated"
+    case popular
+    case upcoming
 }
 
 class APICaller {
@@ -44,42 +50,8 @@ class APICaller {
         task.resume()
     }
     
-    func getUpcomingMovies(completion: @escaping (Result<[Show], Error>) -> Void) {
-        guard let url = URL(string: "\(Constants.baseURL)/3/movie/upcoming?api_key=\(Constants.API_KEY)") else { return }
-        
-        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
-            guard let data = data, error == nil else { return }
-            
-            do {
-                let results = try JSONDecoder().decode(ShowList.self, from: data)
-                print(results.results)
-                completion(.success(results.results))
-            } catch {
-                completion(.failure(APIError.failedToGetData))
-            }
-        }
-        task.resume()
-    }
-    
-    func getPopular(type: ShowType, completion: @escaping (Result<[Show], Error>) -> Void) {
-        guard let url = URL(string: "\(Constants.baseURL)/3/\(type)/popular?api_key=\(Constants.API_KEY)") else { return }
-        
-        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
-            guard let data = data, error == nil else { return }
-            
-            do {
-                let results = try JSONDecoder().decode(ShowList.self, from: data)
-                print(results.results)
-                completion(.success(results.results))
-            } catch {
-                completion(.failure(APIError.failedToGetData))
-            }
-        }
-        task.resume()
-    }
-    
-    func getTopRated(type: ShowType, completion: @escaping (Result<[Show], Error>) -> Void) {
-        guard let url = URL(string: "\(Constants.baseURL)/3/\(type)/top_rated?api_key=\(Constants.API_KEY)") else { return }
+    func getShows(with showType: ShowType, and searchType: SearchType, completion: @escaping (Result<[Show], Error>) -> Void) {
+        guard let url = URL(string: "\(Constants.baseURL)/3/\(showType)/\(searchType)?api_key=\(Constants.API_KEY)") else { return }
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
             guard let data = data, error == nil else { return }

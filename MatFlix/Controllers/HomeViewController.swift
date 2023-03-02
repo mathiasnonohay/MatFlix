@@ -26,7 +26,6 @@ class HomeViewController: UIViewController {
         return table
     }()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,6 +38,15 @@ class HomeViewController: UIViewController {
         homeFeedTable.dataSource = self
         
         let headerView = HeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        
+        APICaller.shared.getTrending(type: .movie) { result in
+            switch result {
+            case .success(let success):
+                headerView.configure(with: success[0])
+            case .failure(let failure):
+                print(failure.localizedDescription)
+            }
+        }
         
         homeFeedTable.tableHeaderView = headerView 
     }
@@ -111,7 +119,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             }
             break;
         case Sections.Popular.rawValue:
-            APICaller.shared.getPopular(type: .movie) { result in
+            APICaller.shared.getShows(with: .movie, and: .popular) { result in
                 switch result {
                 case .success(let shows):
                     cell.configure(with: shows)
@@ -121,7 +129,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             }
             break;
         case Sections.Upcoming.rawValue:
-            APICaller.shared.getUpcomingMovies { result in
+            APICaller.shared.getShows(with: .movie, and: .upcoming) { result in
                 switch result {
                 case .success(let shows):
                     cell.configure(with: shows)
@@ -131,7 +139,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             }
             break;
         case Sections.TopRated.rawValue:
-            APICaller.shared.getTopRated(type: .movie) { result in
+            APICaller.shared.getShows(with: .movie, and: .topRated) { result in
                 switch result {
                 case .success(let shows):
                     cell.configure(with: shows)
