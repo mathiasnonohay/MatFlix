@@ -19,9 +19,10 @@ class SearchViewController: UIViewController {
     }()
     
     private let  searchController: UISearchController = {
-        let controller = UISearchController(searchResultsController: SearchViewController())
+        let controller = UISearchController(searchResultsController: SearchResultViewController())
         controller.searchBar.placeholder = "Search for a Movie or Tv Show"
         controller.searchBar.searchBarStyle = .minimal
+        controller.searchBar.searchTextField.tintColor = .systemGray
         return controller
     }()
 
