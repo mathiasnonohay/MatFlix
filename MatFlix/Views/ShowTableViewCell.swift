@@ -13,6 +13,15 @@ class ShowTableViewCell: UITableViewCell {
     
     private let title: UILabel = {
         let label = UILabel()
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private let showDesc: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -21,12 +30,17 @@ class ShowTableViewCell: UITableViewCell {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 5
         return imageView
     }()
     
     private let playButton: UIButton = {
         let button = UIButton()
+        let image = UIImage(systemName: "play.circle", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20))
+        button.setImage(image, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.tintColor = .white
         return button
     }()
     
@@ -35,7 +49,7 @@ class ShowTableViewCell: UITableViewCell {
         contentView.addSubview(title)
         contentView.addSubview(titlePoster)
         contentView.addSubview(playButton)
-        
+        contentView.backgroundColor = .black
         setupUI()
     }
     
@@ -44,15 +58,18 @@ class ShowTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
-         let constraints = [
+        let constraints = [
             titlePoster.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            titlePoster.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15),
+            titlePoster.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
             titlePoster.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
             titlePoster.widthAnchor.constraint(equalToConstant: 100),
             
             title.leadingAnchor.constraint(equalTo: titlePoster.trailingAnchor, constant: 15),
-            title.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
-         ]
+            title.centerYAnchor.constraint(equalTo: contentView.centerYAnchor, constant: -30),
+            
+            playButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            playButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+        ]
         
         NSLayoutConstraint.activate(constraints)
     }
@@ -62,8 +79,4 @@ class ShowTableViewCell: UITableViewCell {
         titlePoster.sd_setImage(with: url)
         title.text = model.title
     }
-    
-    
-    
-    
 }

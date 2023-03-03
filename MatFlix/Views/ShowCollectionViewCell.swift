@@ -23,7 +23,7 @@ class ShowCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        contentView.addSubview(posterImageView )
+        contentView.addSubview(posterImageView)
     }
     
     required init?(coder: NSCoder) {

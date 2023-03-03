@@ -29,7 +29,7 @@ class HeaderView: UIView {
         return button
     }()
     
-    private let headerView: UIImageView = {
+    let headerView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true

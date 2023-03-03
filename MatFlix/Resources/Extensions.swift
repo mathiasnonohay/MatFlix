@@ -5,7 +5,7 @@
 //  Created by Mathias Nonohay on 07/08/22.
 //
 
-import Foundation
+import UIKit
 
 extension String {
     static let emptyString = ""

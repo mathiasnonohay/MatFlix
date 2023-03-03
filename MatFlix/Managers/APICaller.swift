@@ -21,7 +21,7 @@ enum ShowType: String {
     case movie
     case tv
     case person
-}s
+}
 
 enum SearchType: String {
     case topRated = "top_rated"
@@ -52,6 +52,23 @@ class APICaller {
     
     func getShows(with showType: ShowType, and searchType: SearchType, completion: @escaping (Result<[Show], Error>) -> Void) {
         guard let url = URL(string: "\(Constants.baseURL)/3/\(showType)/\(searchType)?api_key=\(Constants.API_KEY)") else { return }
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
+            guard let data = data, error == nil else { return }
+            
+            do {
+                let results = try JSONDecoder().decode(ShowList.self, from: data)
+                print(results.results)
+                completion(.success(results.results))
+            } catch {
+                completion(.failure(APIError.failedToGetData))
+            }
+        }
+        task.resume()
+    }
+    
+    func getDiscoverMovies(completion: @escaping (Result<[Show], Error>) -> Void) {
+        guard let url = URL(string: "\(Constants.baseURL)/3/discover/movie?api_key=\(Constants.API_KEY)&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_type=flatrate") else { return }
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
             guard let data = data, error == nil else { return }

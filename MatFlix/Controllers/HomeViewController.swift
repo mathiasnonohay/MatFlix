@@ -18,6 +18,7 @@ enum Sections: Int {
 class HomeViewController: UIViewController {
     
     let sectionTitles: [String] = ["Trending Movies", "Trending TV", "Popular", "Upcoming", "Top Rated"]
+    var headerView: HeaderView?
     
     private let homeFeedTable: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
@@ -37,25 +38,20 @@ class HomeViewController: UIViewController {
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
         
-        let headerView = HeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
-        
-        APICaller.shared.getTrending(type: .movie) { result in
-            switch result {
-            case .success(let success):
-                headerView.configure(with: success[0])
-            case .failure(let failure):
-                print(failure.localizedDescription)
-            }
-        }
+        headerView = HeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         
         homeFeedTable.tableHeaderView = headerView 
     }
     
+    private func configureHeader(model: String) {
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500\(model)") else { return }
+        headerView?.headerView.sd_setImage(with: url, completed: nil)
+    }
+    
     private func configureNavBar() {
-        var image = UIImage(named: "netFlixLogo")
+        var image = UIImage(named: "netflixLogo")
         image = image?.withRenderingMode(.alwaysOriginal)
         let logo = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
-        logo.width = 50
         let emptySpace = UIBarButtonItem(systemItem: .flexibleSpace)
         let person =  UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil)
         let playRect = UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
@@ -103,6 +99,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 switch result {
                 case .success(let shows):
                     cell.configure(with: shows)
+                    self.configureHeader(model: shows[0].posterPath ?? "")
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
